@@ -15,6 +15,8 @@
 		7A3800551C19CBB00048102A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3800531C19CBB00048102A /* LaunchScreen.storyboard */; };
 		7A3800601C19CBB00048102A /* PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38005F1C19CBB00048102A /* PlaygroundTests.swift */; };
 		7A38006B1C19CBB00048102A /* PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38006A1C19CBB00048102A /* PlaygroundUITests.swift */; };
+		7A5C34EB1C2059730096ADF8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C34EA1C2059730096ADF8 /* Constants.swift */; };
+		7A5C34EE1C207AE70096ADF8 /* AddressValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C34ED1C207AE70096ADF8 /* AddressValidation.swift */; };
 		8A469A114FF6824677C9E2EA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C684CDE9CEC2D6F48078F7B /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		7A3800661C19CBB00048102A /* PlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A38006A1C19CBB00048102A /* PlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUITests.swift; sourceTree = "<group>"; };
 		7A38006C1C19CBB00048102A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A5C34EA1C2059730096ADF8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7A5C34ED1C207AE70096ADF8 /* AddressValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressValidation.swift; sourceTree = "<group>"; };
 		9539D09EEE7F3F75184633E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,8 +119,9 @@
 		7A3800461C19CBB00048102A /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				7A5C34EC1C207AA50096ADF8 /* Controllers */,
+				7A5C34E91C2059560096ADF8 /* Resources */,
 				7A3800471C19CBB00048102A /* AppDelegate.swift */,
-				7A3800491C19CBB00048102A /* ViewController.swift */,
 				7A38004B1C19CBB00048102A /* Main.storyboard */,
 				7A3800511C19CBB00048102A /* Assets.xcassets */,
 				7A3800531C19CBB00048102A /* LaunchScreen.storyboard */,
@@ -142,6 +147,23 @@
 				7A38006C1C19CBB00048102A /* Info.plist */,
 			);
 			path = PlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		7A5C34E91C2059560096ADF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C34EA1C2059730096ADF8 /* Constants.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7A5C34EC1C207AA50096ADF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A3800491C19CBB00048102A /* ViewController.swift */,
+				7A5C34ED1C207AE70096ADF8 /* AddressValidation.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		9A77D4CC789D7739DA39CAC1 /* Frameworks */ = {
@@ -337,6 +359,8 @@
 				7A38004A1C19CBB00048102A /* ViewController.swift in Sources */,
 				7A3800481C19CBB00048102A /* AppDelegate.swift in Sources */,
 				7A3800501C19CBB00048102A /* Playground.xcdatamodeld in Sources */,
+				7A5C34EE1C207AE70096ADF8 /* AddressValidation.swift in Sources */,
+				7A5C34EB1C2059730096ADF8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
