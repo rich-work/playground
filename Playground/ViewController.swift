@@ -22,12 +22,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let url = NSURL(string: URL_BOOK)
-        Alamofire.request(.GET, url!).responseJSON { response in
-            if let resultJSON = response.result.value {
-                print("\(resultJSON)")
-            }
-        }
+//        let url = NSURL(string: URL_BOOK)
+//        Alamofire.request(.GET, url!).responseJSON { response in
+//            if let resultJSON = response.result.value {
+//                print("\(resultJSON)")
+//            }
+//        }
         
     }
     

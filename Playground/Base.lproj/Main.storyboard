@@ -196,10 +196,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="33l-L2-zG4"/>
+                    <navigationItem key="navigationItem" id="33l-L2-zG4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="arL-75-neB"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="address1" destination="8Oo-gx-Htb" id="4AF-Kw-0cA"/>
-                        <outlet property="address2" destination="zTz-8G-iMw" id="r1F-Xg-ucs"/>
+                        <outlet property="address1" destination="zTz-8G-iMw" id="kCy-Bf-EC4"/>
+                        <outlet property="address2" destination="8Oo-gx-Htb" id="PPK-Zw-o4v"/>
                         <outlet property="cityField" destination="2v8-r9-bzH" id="ULx-j2-RjL"/>
                         <outlet property="nameField" destination="oat-TC-hhV" id="MOd-OG-YI5"/>
                         <outlet property="stateField" destination="XsU-NH-QyP" id="xod-cd-Xmk"/>
