@@ -69,6 +69,10 @@ class ViewController: UIViewController {
         performSegueWithIdentifier(SEGUE_ADDRESS, sender: nil)
     }
     
+    @IBAction func backPressed(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func showErrorAlert(title: String, msg: String) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
         let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
