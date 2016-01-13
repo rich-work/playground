@@ -317,6 +317,18 @@
                                     <action selector="verifyPressed:" destination="27K-J5-BIF" eventType="touchUpInside" id="9cG-jM-5aa"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Barcode Here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqt-bw-qzf">
+                                <rect key="frame" x="20" y="350" width="197" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aew-SG-JaD">
+                                <rect key="frame" x="20" y="401" width="89" height="30"/>
+                                <state key="normal" title="Barcode"/>
+                                <connections>
+                                    <action selector="barcodeVerifyAction:" destination="27K-J5-BIF" eventType="touchUpInside" id="YnW-6p-hmt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -328,6 +340,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="barcodeField" destination="lqt-bw-qzf" id="mUS-1u-qlA"/>
                         <outlet property="firstField" destination="L64-fG-CX4" id="tU2-Ma-aOX"/>
                         <outlet property="lastField" destination="fT5-gK-gd2" id="m3U-bu-jqa"/>
                         <segue destination="qqj-Jp-BgX" kind="show" identifier="userValidOpt" id="LzJ-LR-eBg"/>

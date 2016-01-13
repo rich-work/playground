@@ -14,6 +14,7 @@ class UserValidationController: UIViewController {
     
     @IBOutlet weak var firstField: UITextField!
     @IBOutlet weak var lastField: UITextField!
+    @IBOutlet weak var barcodeField: UITextField!
     
     var ticket: Ticket!
     
@@ -76,7 +77,7 @@ class UserValidationController: UIViewController {
         }
         for var j = 0; j < self.ticket.availUser.count; j++ {
             actionSheet.addAction(UIAlertAction(title: self.ticket.availUser[j], style: .Default, handler: dismissChoice))
-                
+            
 //                {(UIAlertAction) in
 //                let something = self.ticket.availUser[j]
 //                self.submitTicketFake(something)
@@ -89,4 +90,18 @@ class UserValidationController: UIViewController {
     @IBAction func backPressed(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func barcodeVerifyAction(sender: AnyObject) {
+        let urlEquipStr = URL_EQUIPMENT + "\(self.barcodeField.text!)"
+        let urlEquip = NSURL(string: urlEquipStr)!
+        
+        Alamofire.request(.GET, urlEquip).responseJSON { response in
+            print("\(response.result.value)")
+            print(response.data)
+            print(response.response)
+        }
+        
+    }
+    
+    
 }

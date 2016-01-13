@@ -20,3 +20,4 @@ let URL_AUTHOR = "http://test0036247.azurewebsites.net/api/AuthorsApi"
 let URL_ADDRESS = "http://production.shippingapis.com/ShippingAPITest.dll?API=Verify&XML=<AddressValidateRequest USERID=\"497PRIME2626\"><Address ID=\"0\">"
 
 let URL_USER = "https://primesupport.azurewebsites.net/primeservices/api/employees/"
+let URL_EQUIPMENT = "https://primesupport.azurewebsites.net/primeservices/api/equipments/"
