@@ -25,4 +25,7 @@ class MainController: UIViewController {
         self.performSegueWithIdentifier(SEGUE_USER, sender: nil)
     }
     
+    @IBAction func multiPagePressed(sender: UIButton) {
+        self.performSegueWithIdentifier(SEGUE_MULTIPAGE, sender: nil)
+    }
 }

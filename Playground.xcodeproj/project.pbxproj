@@ -20,6 +20,7 @@
 		7A5C34EB1C2059730096ADF8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C34EA1C2059730096ADF8 /* Constants.swift */; };
 		7A5C34EE1C207AE70096ADF8 /* AddressValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C34ED1C207AE70096ADF8 /* AddressValidation.swift */; };
 		7A86CBB21C4056520036D150 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86CBB11C4056520036D150 /* Ticket.swift */; };
+		7AB512421C77CA5D0033EBB7 /* TestPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB512411C77CA5D0033EBB7 /* TestPageViewController.swift */; };
 		8A469A114FF6824677C9E2EA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C684CDE9CEC2D6F48078F7B /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		7A5C34EA1C2059730096ADF8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7A5C34ED1C207AE70096ADF8 /* AddressValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressValidation.swift; sourceTree = "<group>"; };
 		7A86CBB11C4056520036D150 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		7AB512411C77CA5D0033EBB7 /* TestPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageViewController.swift; sourceTree = "<group>"; };
 		9539D09EEE7F3F75184633E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 				7A5C34ED1C207AE70096ADF8 /* AddressValidation.swift */,
 				7A235EA81C4015B20084A1F1 /* MainController.swift */,
 				7A235EAA1C4024CE0084A1F1 /* UserValidationController.swift */,
+				7AB512411C77CA5D0033EBB7 /* TestPageViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB512421C77CA5D0033EBB7 /* TestPageViewController.swift in Sources */,
 				7A235EAB1C4024CE0084A1F1 /* UserValidationController.swift in Sources */,
 				7A38004A1C19CBB00048102A /* ViewController.swift in Sources */,
 				7A3800481C19CBB00048102A /* AppDelegate.swift in Sources */,

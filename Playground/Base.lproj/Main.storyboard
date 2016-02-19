@@ -5,6 +5,40 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--Test Page View Controller-->
+        <scene sceneID="p3a-dM-Ql4">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="6oR-tH-nib" customClass="TestPageViewController" customModule="Playground" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4n-5H-UYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="-492"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kgS-1F-nHP">
+            <objects>
+                <viewController storyboardIdentifier="firstPage" id="6Xe-it-M2a" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="62T-lt-QI4"/>
+                        <viewControllerLayoutGuide type="bottom" id="9u1-i0-cM8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="98j-2z-GYY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2a-0Z-atD">
+                                <rect key="frame" x="39" y="88" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DT5-0p-6xK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="-492"/>
+        </scene>
         <!--Main Controller-->
         <scene sceneID="WcF-jg-V5w">
             <objects>
@@ -31,12 +65,20 @@
                                     <action selector="userPressed:" destination="Y24-8C-wlg" eventType="touchUpInside" id="cyg-9G-1IO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-oj-84l">
+                                <rect key="frame" x="77" y="124" width="68" height="30"/>
+                                <state key="normal" title="Multipage"/>
+                                <connections>
+                                    <action selector="multiPagePressed:" destination="Y24-8C-wlg" eventType="touchUpInside" id="wjM-i2-aUq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <segue destination="dlm-sR-lXE" kind="show" identifier="personPlayground" id="Ati-lp-1wL"/>
                         <segue destination="sov-tJ-yoA" kind="show" identifier="userValidation" id="xpl-33-pBL"/>
+                        <segue destination="6oR-tH-nib" kind="show" identifier="multiPageView" id="OFv-Y1-bMk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7P-yz-On0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -403,6 +445,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTa-f5-ENn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-364" y="1011"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TF5-Np-L74">
+            <objects>
+                <viewController storyboardIdentifier="secondPage" id="0Ru-Lh-pic" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oZU-SL-SPU"/>
+                        <viewControllerLayoutGuide type="bottom" id="pDD-8g-0bt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2h5-hY-wml">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHs-AY-ktW">
+                                <rect key="frame" x="20" y="88" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mlu-59-vQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="-1205"/>
         </scene>
     </scenes>
 </document>

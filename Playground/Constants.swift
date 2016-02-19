@@ -13,6 +13,7 @@ let SEGUE_ADDRESS = "address"
 let SEGUE_PERSON = "personPlayground"
 let SEGUE_USER = "userValidation"
 let SEGUE_USER_OPT = "userValidOpt"
+let SEGUE_MULTIPAGE = "multiPageView"
 
 
 let URL_BOOK = "http://test0036247.azurewebsites.net/api/BooksApi"

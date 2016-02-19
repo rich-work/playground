@@ -96,9 +96,15 @@ class UserValidationController: UIViewController {
         let urlEquip = NSURL(string: urlEquipStr)!
         
         Alamofire.request(.GET, urlEquip).responseJSON { response in
-            print("\(response.result.value)")
-            print(response.data)
-            print(response.response)
+//            print("\(response.result.value)")
+//            print(response.data)
+//            print(response.response)
+            print("\(response.response!.statusCode)")
+            if response.response!.statusCode == 200 {
+                print("\(response.result.value!)")
+            } else {
+                print("Error")
+            }
         }
         
     }
